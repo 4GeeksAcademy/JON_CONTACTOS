@@ -1,0 +1,146 @@
+/* ============================== 
+   Estilos globales (index.css)
+   ============================== */
+
+/* Reinicio muy básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fuente base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Contenedor general para la página de contactos */
+.contacts-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Título principal */
+.contacts-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Contenedor de todas las tarjetas */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ==============================
+   Estilos específicos de Card
+   ============================== */
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Efecto hover para resaltar la tarjeta */
+.contact-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* == Avatar == */
+.card-avatar {
+  flex: 0 0 80px;
+  height: 80px;
+  margin-right: 1rem;
+}
+
+.card-avatar img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+/* == Información == */
+.card-info {
+  flex: 1;
+}
+
+/* Nombre del contacto */
+.contact-name {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+/* Cada línea de info (icono + texto) */
+.contact-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.contact-line .icon {
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  color: #555;
+}
+
+/* Texto de la info */
+.info-text {
+  font-size: 0.95rem;
+}
+
+/* == Botones de acción == */
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+/* Estilo base de ambos botones */
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Botón editar: color principal */
+.edit-btn {
+  color: #1e88e5;
+}
+
+.edit-btn:hover {
+  background-color: rgba(30, 136, 229, 0.1);
+}
+
+/* Botón eliminar: color rojo */
+.delete-btn {
+  color: #e53935;
+}
+
+.delete-btn:hover {
+  background-color: rgba(229, 57, 53, 0.1);
+}
